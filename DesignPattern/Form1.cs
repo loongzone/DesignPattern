@@ -22,5 +22,12 @@ namespace DesignPattern
             Cat cat = new Cat("咪咪");
             MessageBox.Show(cat.Shout());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Dog dog = new Dog();
+            dog.ShoutNum = 5;
+            MessageBox.Show(dog.Shout());
+        }
     }
 }
