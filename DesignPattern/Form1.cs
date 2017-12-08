@@ -16,5 +16,11 @@ namespace DesignPattern
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Cat cat = new Cat("咪咪");
+            MessageBox.Show(cat.Shout());
+        }
     }
 }
