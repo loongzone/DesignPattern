@@ -38,9 +38,9 @@ namespace DesignPattern
         private void button3_Click(object sender, EventArgs e)
         {
             arrayAnimal = new Animal[5];
-            arrayAnimal[0] = new Cat("小花");
+            arrayAnimal[0] = new Sheep("小花");
             arrayAnimal[1] = new Dog("小汪");
-            arrayAnimal[2] = new Cat("小黑");
+            arrayAnimal[2] = new Cattle("小黑");
             arrayAnimal[3] = new Dog("汪汪");
             arrayAnimal[4] = new Cat("咪咪");
         }

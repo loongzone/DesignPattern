@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace DesignPattern
 {
-    public class Dog : Animal
+    public class Cattle : Animal
     {
-        public Dog() : base()
+        public Cattle() : base()
         {
         }
-        public Dog(string name) : base(name) { }
 
+        public Cattle(string name) : base(name)
+        {
+
+        }
 
         public override string getShoutSound()
         {
-            return "汪";
+            return "哞";
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern
 {
-    public class Animal
+    public abstract class Animal
     {
         protected string name = string.Empty;
         public Animal(string name)
@@ -27,9 +27,16 @@ namespace DesignPattern
             set => shoutNum = value > 10 ? 10 : value;
         }
 
-        public virtual string Shout()
+        public string Shout()
         {
-            return string.Empty;
+            string result = string.Empty;
+            for (int i = 0; i < shoutNum; i++)
+            {
+                result += getShoutSound() + ", ";
+            }
+            return "我的名字叫" + name + " " + result;
         }
+
+        public abstract string getShoutSound();
     }
 }

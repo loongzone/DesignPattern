@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern
 {
-    public class Cat:Animal
+    public class Cat : Animal
     {
 
         public Cat() : base()
@@ -18,14 +18,9 @@ namespace DesignPattern
 
         }
 
-        public override string Shout()
+        public override string getShoutSound()
         {
-            string result = string.Empty;
-            for (int i = 0; i < shoutNum; i++)
-            {
-                result += "喵 ";
-            }
-            return "我的名字叫" + name + " "  + result;
+            return "喵";
         }
     }
 }
