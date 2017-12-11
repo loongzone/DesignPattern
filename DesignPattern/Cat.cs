@@ -6,25 +6,16 @@ using System.Threading.Tasks;
 
 namespace DesignPattern
 {
-    public class Cat
+    public class Cat:Animal
     {
-        private string name = string.Empty;
-        public Cat(string name)
+
+        public Cat() : base()
         {
-            this.name = name;
         }
 
-        public Cat()
+        public Cat(string name) : base(name)
         {
-            this.name = "无名";
-        }
 
-        private int shoutNum = 3;
-
-        public int ShoutNum
-        {
-            get => shoutNum;
-            set => shoutNum = value > 10 ? 10 : value;
         }
 
         public string Shout()

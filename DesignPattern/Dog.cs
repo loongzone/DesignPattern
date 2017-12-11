@@ -6,26 +6,13 @@ using System.Threading.Tasks;
 
 namespace DesignPattern
 {
-    public class Dog
+    public class Dog : Animal
     {
-        private string name = string.Empty;
-        public Dog(string name)
+        public Dog() : base()
         {
-            this.name = name;
         }
+        public Dog(string name) : base() { }
 
-        public Dog()
-        {
-            this.name = "无名";
-        }
-
-        private int shoutNum = 3;
-
-        public int ShoutNum
-        {
-            get => shoutNum;
-            set => shoutNum = value > 10 ? 10 : value;
-        }
 
         public string Shout()
         {
@@ -34,7 +21,7 @@ namespace DesignPattern
             {
                 result += "汪 ";
             }
-            return "我的名字叫" + name + " "  + result;
+            return "我的名字叫" + name + " " + result;
         }
     }
 }
