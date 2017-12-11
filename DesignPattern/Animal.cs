@@ -26,5 +26,10 @@ namespace DesignPattern
             get => shoutNum;
             set => shoutNum = value > 10 ? 10 : value;
         }
+
+        public virtual string Shout()
+        {
+            return string.Empty;
+        }
     }
 }
