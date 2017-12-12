@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal.cs" />
+    <Compile Include="IChange.cs" />
+    <Compile Include="MachineCat.cs" />
     <Compile Include="Sheep.cs" />
     <Compile Include="Cattle.cs" />
     <Compile Include="Dog.cs" />

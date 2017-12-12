@@ -52,5 +52,16 @@ namespace DesignPattern
                 MessageBox.Show(item.Shout());
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MachineCat mcat = new MachineCat("叮当");
+
+            IChange[] array = new IChange[1];
+
+            array[0] = mcat;
+
+            MessageBox.Show(mcat.ChangeThing("接口"));
+        }
     }
 }
